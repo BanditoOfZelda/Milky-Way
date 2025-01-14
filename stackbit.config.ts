@@ -14,12 +14,7 @@ export default defineStackbitConfig({
           type: "page",
           urlPath: "/posts/{slug}", // Matches [...slug].astro routing
           filePath: "src/content/posts/{slug}.md", // Blog Markdown files
-          fields: [
-            { name: "title", type: "string", required: true, label: "Title" },
-            { name: "date", type: "datetime", required: true, label: "Publish Date" },
-            { name: "tags", type: "list", required: false, label: "Tags" },
-            { name: "body", type: "markdown", required: true, label: "Content" },
-          ],
+          fields: [{ name: "title", type: "string", required: true}]
         },
         // Static Page Model
         {
@@ -28,9 +23,7 @@ export default defineStackbitConfig({
           urlPath: "/{slug}",
           filePath: "src/pages/{slug}.astro", // Adjust if needed
           fields: [
-            { name: "title", type: "string", required: true, label: "Page Title" },
-            { name: "body", type: "markdown", required: true, label: "Page Content" },
-          ],
+            { name: "title", type: "string", required: true, label: "Page Title" }]
         },
       ],
       assetsConfig: {
@@ -39,7 +32,7 @@ export default defineStackbitConfig({
         uploadDir: "public",
         publicPath: "/"
       }
-    }),
+    })
   ],
   siteMap: ({ documents, models }) => {
     // 1. Filter all page models
