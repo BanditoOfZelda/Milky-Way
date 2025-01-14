@@ -6,7 +6,7 @@ export default defineStackbitConfig({
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
-      contentDirs: ["src/content/posts"], // Path to blog posts
+      contentDirs: ["src/content", "src/pages"], // Include both content and page files
       models: [
         // Blog Post Model
         {
@@ -19,6 +19,17 @@ export default defineStackbitConfig({
             { name: "date", type: "datetime", required: true, label: "Publish Date" },
             { name: "tags", type: "list", required: false, label: "Tags" },
             { name: "body", type: "markdown", required: true, label: "Content" },
+          ],
+        },
+        // Static Page Model
+        {
+          name: "Page",
+          type: "page",
+          urlPath: "/{slug}",
+          filePath: "src/pages/{slug}.md", // Adjust if needed
+          fields: [
+            { name: "title", type: "string", required: true, label: "Page Title" },
+            { name: "body", type: "markdown", required: true, label: "Page Content" },
           ],
         },
       ],
