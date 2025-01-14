@@ -67,7 +67,7 @@ small, li {
 
 .navbar__menu {
     font-family: var(--body);
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     text-align: right;
 }
 
@@ -88,6 +88,12 @@ small, li {
 
 /* Gifs */
 .gif {
+    margin: 20px 0 0 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.homegif {
     margin: 20px 0 0 0;
     text-align: center;
 }
