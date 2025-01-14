@@ -26,7 +26,7 @@ export default defineStackbitConfig({
           name: "Page",
           type: "page",
           urlPath: "/{slug}",
-          filePath: "src/pages/{slug}.md", // Adjust if needed
+          filePath: "src/pages/{slug}.astro", // Adjust if needed
           fields: [
             { name: "title", type: "string", required: true, label: "Page Title" },
             { name: "body", type: "markdown", required: true, label: "Page Content" },
