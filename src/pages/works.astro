@@ -3,11 +3,11 @@ import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 const allProjects = await getCollection("projects");
-const pageTitle = "Works";
+const pageTitle = "Projects";
 ---
 <Layout pageTitle={pageTitle}>
     <div class="gif">
-        <img width="50%" height="50%" alt="RaccoonLaptopGif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZhc3plOTJqcTg0dmFrejl1OXd1MzJja3N5NWExMGlvMDY2eGp5ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ix8dIWbEovToc/giphy.gif"/>
+        <img width="50%" height="50%" alt="SleepingCatGif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZhc3plOTJqcTg0dmFrejl1OXd1MzJja3N5NWExMGlvMDY2eGp5ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ix8dIWbEovToc/giphy.gif"/>
     </div>
     <h2>Projects</h2>
     <ul role="list" class="link-card-grid">

@@ -33,6 +33,12 @@ export default defineStackbitConfig({
           ],
         },
       ],
+      assetsConfig: {
+        referenceType: "static",
+        staticDir: "public",
+        uploadDir: "public",
+        publicPath: "/"
+      }
     }),
   ],
 });
