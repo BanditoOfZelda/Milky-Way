@@ -21,6 +21,8 @@ const projectsCollection = defineCollection({
       stack: z.string(),
       website: z.string(),
       github: z.string(),
+      p2: z.string().optional(),
+      p3: z.string().optional(),
     })
 });
 

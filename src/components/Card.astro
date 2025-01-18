@@ -16,12 +16,12 @@ const { url, image, title, body } = Astro.props;
                 class="card__img"
                 width="226"
                 height="127"
-                src="https://pub.mdpi-res.com/prosthesis/prosthesis-05-00011/article_deploy/html/images/prosthesis-05-00011-g001.png?1675418742"
+                src={image}
                 alt="ProjectImage"
             />
         </div>
         <h3 class="card__title">
-            Modular Prosthetic Hand
+            {title}
         </h3>
         <p class="card__txt">
             {body}
