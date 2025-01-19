@@ -5,10 +5,9 @@ import Card from "../components/CardPost.astro";
 const allPosts = await getCollection("posts");
 const pageTitle = "Posts";
 ---
-
 <Layout pageTitle={pageTitle}>
     <div class="gif">
-        <img width="300" height="259" alt="RaccoonNotesGif" src="/blog.webp" />
+        <img width="50%" height="50%" alt="RaccoonNotesGif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjR3ajd4NHZyMGV3dzdrM3N2a3c2ZjdrYzM1Ynl3emRodGN5amM5ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YYQ6sw8jt2HRxX4uVi/giphy.gif" />
     </div>
     <h2>Blog</h2>
     <ul role="list" class="link-card-grid">

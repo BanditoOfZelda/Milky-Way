@@ -1,9 +1,9 @@
 ---
-title: 'Post 1'
-author: Tristen Tomczak
-date: '09-09-2024'
+title: 'Life in Fredericton'
+author: Josh Groulx
+date: '01-17-2025'
 image:
-    url: '/blog-post.webp'
+    url: 'https://www.frederictoncapitalregion.ca/sites/1/files/styles/5_2/public/2023-03/Fredericton.png?itok=ieX9aFoC'
     alt: 'Post Thumbnail'
 ---
 
